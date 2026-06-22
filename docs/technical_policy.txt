@@ -1,0 +1,31 @@
+Technical Support Policy
+
+Technical issues should be categorized by severity.
+
+Severity Levels:
+
+Low:
+- Minor UI issues
+- Cosmetic bugs
+
+Medium:
+- Features not working correctly
+- Performance degradation
+
+High:
+- Critical workflows unavailable
+- Major functionality broken
+
+Critical:
+- Full system outage
+- Data loss
+- Service unavailable for all users
+
+Response Times:
+
+Low: 72 hours
+Medium: 24 hours
+High: 4 hours
+Critical: Immediate escalation
+
+All critical technical incidents must be escalated to the Engineering Team.

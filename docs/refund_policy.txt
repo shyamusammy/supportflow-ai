@@ -1,0 +1,12 @@
+Refund Policy
+
+Customers are eligible for refunds if:
+
+- Duplicate billing occurred
+- Service outage exceeded SLA
+- Unauthorized charges were detected
+
+Refund processing time:
+5-7 business days
+
+Refund requests above $1000 require manual approval.

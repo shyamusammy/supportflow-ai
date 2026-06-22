@@ -1,0 +1,9 @@
+Subscription Management
+
+Customers may:
+
+- Upgrade plans immediately
+- Downgrade at renewal
+- Cancel anytime
+
+Subscription changes take effect immediately unless otherwise specified.

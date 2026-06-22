@@ -1,0 +1,24 @@
+Customer Support Guide
+
+Section 1
+A customer may contact support regarding billing issues.
+Duplicate charges should be investigated immediately.
+Refunds must be processed within 5 business days.
+
+Section 2
+Login issues are among the most common support requests.
+Users should reset passwords before escalation.
+Multi-factor authentication problems should be reviewed.
+
+Section 3
+Subscription management includes upgrades, downgrades and cancellations.
+Changes should be reflected immediately.
+
+Section 4
+Security incidents require urgent attention.
+Account compromise must be escalated.
+Unauthorized access should be investigated.
+
+Section 5
+Technical incidents should be categorized by severity.
+Critical outages require executive notification.

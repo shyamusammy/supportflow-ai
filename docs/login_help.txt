@@ -1,0 +1,13 @@
+Login Support Guide
+
+If a customer cannot log in:
+
+1. Reset password.
+2. Clear browser cache.
+3. Verify email address.
+4. Check account lock status.
+
+Escalate if:
+- Account compromised
+- Multiple failed login attempts
+- MFA failure

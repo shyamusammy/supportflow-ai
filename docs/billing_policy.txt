@@ -1,0 +1,14 @@
+Duplicate Billing Policy
+
+If a customer reports duplicate charges:
+
+1. Verify transaction history.
+2. Investigate within 48 hours.
+3. Confirm duplicate payment.
+4. Issue refund within 5 business days.
+
+All duplicate billing cases are handled by the Billing Support Team.
+
+Priority:
+- Single duplicate charge = High
+- Multiple duplicate charges = Critical
