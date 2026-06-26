@@ -75,3 +75,73 @@ architecture.
 - ⚡ FastAPI REST API
 - 🖥 Modern Streamlit Interface
 - 🐳 Docker Ready
+
+## 📸 Application Preview
+
+### 🤖 About
+
+<img src="frontend/assets/screenshots/About.jpeg" width="100%">
+
+The About page introduces SupportFlow AI, highlights its AI capabilities, technology stack, and provides quick navigation to the main application modules.
+
+---
+
+### 📊 Dashboard
+
+<img src="frontend/assets/screenshots/Dashboard.jpeg" width="100%">
+
+The Dashboard provides a real-time overview of customer support operations, including ticket statistics, escalation metrics, category distribution, and recent customer requests.
+
+---
+
+### 🎫 Ticket History
+
+<img src="frontend/assets/screenshots/ticket_history.jpeg" width="100%">
+
+The Ticket History page allows users to browse, search, and review previously processed customer support tickets, including ticket category, priority, sentiment, assigned team, and escalation status.
+
+---
+
+### 📈 Analytics
+
+<img src="frontend/assets/screenshots/Analytics.jpeg" width="100%">
+
+The Analytics dashboard visualizes ticket trends and operational metrics, helping support teams monitor customer issues and identify recurring patterns.
+
+---
+
+# 🔄 AI Workflow
+
+<img src="frontend/assets/workflow-diagram.png" width="100%">
+
+SupportFlow AI processes every customer request through a sequential multi-agent workflow powered by **CrewAI**.
+
+### Workflow Steps
+
+1. Customer submits a support request.
+2. FastAPI receives the request.
+3. CrewAI orchestrates the workflow.
+4. Intent Classification Agent identifies the customer's issue.
+5. Knowledge Retrieval Agent searches the Pinecone vector database using Retrieval-Augmented Generation (RAG).
+6. Google Gemini generates a contextual customer response.
+7. Escalation Agent determines whether human intervention is required.
+8. The processed ticket is stored in SQLite.
+9. Streamlit visualizes ticket history and analytics.
+
+---
+
+# 🏗️ System Architecture
+
+<img src="frontend/assets/architecture-diagram.png" width="100%">
+
+SupportFlow AI follows a modular architecture consisting of:
+
+* **Frontend:** Streamlit Dashboard
+* **Backend:** FastAPI REST API
+* **AI Orchestration:** CrewAI Multi-Agent System
+* **Large Language Model:** Google Gemini
+* **Knowledge Retrieval:** Pinecone Vector Database
+* **Database:** SQLite
+* **Visualization:** Plotly
+
+The modular design allows each component to operate independently while enabling seamless communication between AI agents, APIs, databases, and the user interface.
