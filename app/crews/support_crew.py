@@ -53,4 +53,14 @@ def run_support_crew(customer_message: str):
         verbose=True,
     )
 
-    return crew.kickoff()
+    # Execute Crew
+
+    crew.kickoff()
+
+    # Return parsed Pydantic outputs
+    return {
+        "intent": intent_task.output.pydantic,
+        "knowledge": knowledge_task.output,
+        "response": response_task.output.pydantic,
+        "escalation": escalation_task.output.pydantic,
+    }

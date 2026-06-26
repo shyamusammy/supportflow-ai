@@ -1,20 +1,29 @@
 import os
+
 from dotenv import load_dotenv
 from google import genai
+
+from app.config import EMBEDDING_MODEL
+from app.logger import logger
 
 load_dotenv()
 
 api_key = os.getenv("GOOGLE_API_KEY")
 
-print("API Key Loaded:", api_key is not None)
+logger.info(
+    f"Google API Key Loaded: "
+    f"{bool(api_key)}"
+)
 
 client = genai.Client(
     api_key=api_key
 )
 
+
 def create_embedding(text: str):
+
     response = client.models.embed_content(
-        model="gemini-embedding-001",
+        model=EMBEDDING_MODEL,
         contents=text
     )
 

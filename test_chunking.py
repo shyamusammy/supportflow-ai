@@ -4,7 +4,7 @@ from pathlib import Path
 from app.knowledge.chunker import chunk_text
 
 content = Path(
-    "docs/test_large_doc.txt"
+    "knowledge_base/test_large_doc.txt"
 ).read_text()
 
 chunks = chunk_text(content)

@@ -3,15 +3,16 @@ from pathlib import Path
 from app.knowledge.embedder import create_embedding
 from app.knowledge.pinecone_client import index
 from app.knowledge.chunker import chunk_text
+from app.config import PINECONE_NAMESPACE
 
-DOCS_PATH = "docs"
+DOCS_PATH = "knowledge_base"
 
 
 def ingest_documents():
 
     for file in Path(DOCS_PATH).glob("*.txt"):
 
-        print(f"Processing: {file.name}")
+        logger.info(f"Processing: {file.name}")
 
         content = file.read_text(
             encoding="utf-8"
@@ -19,7 +20,7 @@ def ingest_documents():
 
         chunks = chunk_text(content)
 
-        print(f"Total Chunks: {len(chunks)}")
+        logger.info(f"Total Chunks: {len(chunks)}")
 
         for i, chunk in enumerate(chunks):
 
@@ -29,7 +30,7 @@ def ingest_documents():
 
             department = file.stem.split("_")[0]
 
-            print(f"Department: {department}")
+            logger.info(f"Department: {department}")
 
             index.upsert(
                 vectors=[
@@ -45,10 +46,10 @@ def ingest_documents():
                         }
                     }
                 ],
-                namespace="support-docs"
+                namespace=PINECONE_NAMESPACE
             )
 
-            print(f"✅ Ingested {vector_id}")
+            logger.info(f"✅ Ingested {vector_id}")
 
 
 if __name__ == "__main__":

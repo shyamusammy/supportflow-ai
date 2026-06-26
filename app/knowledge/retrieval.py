@@ -1,19 +1,20 @@
+from app.logger import logger
 from app.knowledge.embedder import create_embedding
 from app.knowledge.pinecone_client import index
 
-MIN_SCORE = 0.65
+from app.config import MIN_SCORE, TOP_K, PINECONE_NAMESPACE
 
 
 def retrieve_documents(
     query: str,
     department: str | None = None,
-    top_k: int = 5
+    top_k: int = TOP_K
 ):
 
     query_embedding = create_embedding(query)
 
     query_params = {
-        "namespace": "support-docs",
+        "namespace": PINECONE_NAMESPACE,
         "vector": query_embedding,
         "top_k": top_k,
         "include_metadata": True,
@@ -32,7 +33,7 @@ def retrieve_documents(
 
         score = match["score"]
 
-        print(
+        logger.info(
             f"Score: {score:.4f} | "
             f"Source: {match['metadata']['source']}"
         )

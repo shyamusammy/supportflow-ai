@@ -1,5 +1,6 @@
 from app.crews.support_crew import run_support_crew
 
+
 def main():
 
     customer_message = """
@@ -10,9 +11,28 @@ def main():
 
     print("\n")
     print("=" * 60)
-    print("FINAL RESULT")
+    print("INTENT")
     print("=" * 60)
-    print(result)
+    print(result["intent"])
+
+    print("\n")
+    print("=" * 60)
+    print("KNOWLEDGE")
+    print("=" * 60)
+    print(result["knowledge"])
+
+    print("\n")
+    print("=" * 60)
+    print("RESPONSE")
+    print("=" * 60)
+    print(result["response"])
+
+    print("\n")
+    print("=" * 60)
+    print("ESCALATION")
+    print("=" * 60)
+    print(result["escalation"])
+
 
 if __name__ == "__main__":
     main()
