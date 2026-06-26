@@ -96,7 +96,7 @@ The Dashboard provides a real-time overview of customer support operations, incl
 
 ### 🎫 Ticket History
 
-<img src="frontend/assets/screenshots/ticket_history.jpeg" width="100%">
+<img src="frontend/assets/screenshots/Ticket_history.jpeg" width="100%">
 
 The Ticket History page allows users to browse, search, and review previously processed customer support tickets, including ticket category, priority, sentiment, assigned team, and escalation status.
 
