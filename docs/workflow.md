@@ -16,9 +16,7 @@ Each AI agent is responsible for a specific task, allowing the system to produce
 
 > Replace the image below with your generated workflow diagram.
 
-```markdown
-<img src="frontend/assets/workflow-diagram.png" width="100%">
-```
+<img src="../frontend/assets/workflow-diagram.png" width="100%">
 
 ---
 

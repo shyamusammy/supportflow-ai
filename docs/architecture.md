@@ -26,9 +26,7 @@ This separation makes the system easier to maintain, extend, and deploy.
 
 > Replace the image below with your generated architecture diagram.
 
-```markdown
-<img src="frontend/assets/architecture-diagram.png" width="100%">
-```
+<img src="../frontend/assets/architecture-diagram.png" width="100%">
 
 ---
 
